@@ -17,7 +17,7 @@ void PrintArray(string[] array)  // Метод для вывода массив�
     }
 }
 
-string[] FinalArray()  // Метод для создания массива могласно условиям.
+string[] FinalArray()  // Метод для создания массива cогласно условиям.
 {
     string[] array = CreateArray();
     string Fstring = String.Empty;
@@ -28,7 +28,7 @@ string[] FinalArray()  // Метод для создания массива мо
             Fstring = Fstring + array[i] + ",";
         }
     }
-    Fstring = Fstring.Remove(Fstring.Length-1); // Для удаления запяитой в конце.
+    Fstring = Fstring.Remove(Fstring.Length-1); // Для удаления запятой в конце.
     string[] NewArray = Fstring.Split(",");
     return NewArray;
 }
